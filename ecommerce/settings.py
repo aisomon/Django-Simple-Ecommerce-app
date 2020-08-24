@@ -25,7 +25,7 @@ SECRET_KEY = '7cc&al6_@3c!)xyk7!02x9714w@1un6e5mbwgz4w%t^nbi!pqs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*] # here (#) for all domain
+ALLOWED_HOSTS = ['evening-lowlands-78232.herokuapp.com', 'localhost:8000', '127.0.0.1'] # here (#) for all domain
 
 
 # Application definition
