@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 
 #for image uploading folder direcrtory 
-MEDIA_ROOT = os.path.join(BASE_DIR,'store/static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
 #Finally, if you’d like gzip functionality enabled, also add the following setting to settings.py.
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
