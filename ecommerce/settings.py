@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7cc&al6_@3c!)xyk7!02x9714w@1un6e5mbwgz4w%t^nbi!pqs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['evening-lowlands-78232.herokuapp.com', 'localhost:8000', '127.0.0.1'] # here (#) for all domain
+#ALLOWED_HOSTS = ['evening-lowlands-78232.herokuapp.com', 'localhost:8000', '127.0.0.1'] # here (#) for all domain
 
 
 # Application definition
@@ -118,12 +118,12 @@ USE_L10N = True
 
 USE_TZ = True
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 #for heroku to upload static file
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 
 #for image uploading folder direcrtory 
-MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR,'store/static/images')
 
 #Finally, if you’d like gzip functionality enabled, also add the following setting to settings.py.
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
